@@ -6,7 +6,6 @@ AI Mood Music Generator is a web application that analyzes text input to detect 
 - LangChain
 - Spotify Web API
 - TypeScript
-- Chakra UI
 - ShadCN UI
 - Lucide Icons
 
@@ -22,7 +21,7 @@ AI Mood Music Generator is a web application that analyzes text input to detect 
 
 I started by integrating LangChain to analyze the mood of the provided text input. Next, I used the Spotify Web API to fetch playlists that match the detected mood and selected genres. I then implemented a multi-select genre feature using ShadCN UI's `Checkbox` component. The playlist results are displayed with an embedded Spotify player for users to play songs directly from the app.
 
-Afterward, I focused on styling the application using Chakra UI, ensuring a modern and responsive design. Lastly, I performed some small refactoring and styling touch-ups to enhance the user experience.
+Afterward, I focused on styling the application using Shadcn UI, ensuring a modern and responsive design. Lastly, I performed some small refactoring and styling touch-ups to enhance the user experience.
 
 ## 🚦 Running the Project
 
