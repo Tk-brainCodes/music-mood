@@ -60,6 +60,7 @@ export function GenreCombobox({
                     setValue(currentValue === value ? "" : currentValue);
                     setOpen(false);
                   }}
+                  className="text-white"
                 >
                   <Check
                     className={cn(
