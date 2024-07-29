@@ -50,7 +50,7 @@ export function GenreCombobox({
         <Command>
           <CommandInput placeholder='Search genres...' />
           <CommandEmpty>No genres found.</CommandEmpty>
-          <CommandList>
+          <CommandList className="bg-black text-white">
             <CommandGroup>
               {genres.map((framework: any) => (
                 <CommandItem
