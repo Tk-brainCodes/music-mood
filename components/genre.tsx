@@ -25,10 +25,7 @@ type GenreComboboxProps = {
   setValue: React.Dispatch<React.SetStateAction<string>>;
 };
 
-export function GenreCombobox({
-  value,
-  setValue,
-}: GenreComboboxProps) {
+export function GenreCombobox({ value, setValue }: GenreComboboxProps) {
   const [open, setOpen] = React.useState(false);
 
   return (
@@ -50,17 +47,17 @@ export function GenreCombobox({
         <Command>
           <CommandInput placeholder='Search genres...' />
           <CommandEmpty>No genres found.</CommandEmpty>
-          <CommandList className="bg-black text-white">
+          <CommandList className='bg-black text-white'>
             <CommandGroup>
               {genres.map((framework: any) => (
                 <CommandItem
                   key={framework.value}
                   value={framework.value}
-                  onSelect={(currentValue) => {
+                  onSelect={(currentValue: any) => {
                     setValue(currentValue === value ? "" : currentValue);
                     setOpen(false);
                   }}
-                  className="text-white"
+                  className='text-white'
                 >
                   <Check
                     className={cn(
