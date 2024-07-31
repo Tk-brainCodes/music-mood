@@ -71,6 +71,11 @@ const PlayList = () => {
           />
         </div>
       </div>
+      <div className='w-full px-2 py-2 flex items-center justify-center'>
+        <h3 className='text-xl font-semibold text-white mt-[1em] mb-[1em]'>
+          Enter Genre
+        </h3>
+      </div>
       <GenreCombobox value={value} setValue={setValue} />
 
       <Button
@@ -78,7 +83,7 @@ const PlayList = () => {
         className='px-6 py-6 bg-[#1ED760] rounded-full mt-[1em] '
       >
         {loading ? (
-          <span className="flex gap-x-3">
+          <span className='flex gap-x-3'>
             <LoaderCircle className='animate-spin' /> Loading playlist..
           </span>
         ) : (
