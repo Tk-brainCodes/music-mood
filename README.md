@@ -4,6 +4,7 @@ AI Mood Music Generator is a web application that analyzes text input to detect 
 
 - Next.js
 - LangChain
+- Google-GenAI
 - Spotify Web API
 - TypeScript
 - ShadCN UI
