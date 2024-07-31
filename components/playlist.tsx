@@ -72,7 +72,7 @@ const PlayList = () => {
         </div>
       </div>
       <div className='w-full px-2 py-2 flex items-center justify-center'>
-        <h3 className='text-xl font-semibold text-white mt-[1em] mb-[1em]'>
+        <h3 className='text-xl font-semibold text-white mt-2 mb-2'>
           Enter Genre
         </h3>
       </div>
