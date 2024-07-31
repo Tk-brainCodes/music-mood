@@ -39,7 +39,7 @@ export function GenreCombobox({ value, setValue }: GenreComboboxProps) {
         >
           {value
             ? genres.find((framework: any) => framework.value === value)?.label
-            : "Select framework..."}
+            : "Select genres..."}
           <ChevronsUpDown className='ml-2 h-4 w-4 shrink-0 opacity-50' />
         </Button>
       </PopoverTrigger>
