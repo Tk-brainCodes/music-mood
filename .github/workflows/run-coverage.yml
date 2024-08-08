@@ -1,0 +1,19 @@
+name: Run Coverage on PR
+on: pull_request
+
+jobs:
+  build-and-run-coverage:
+    runs-on: ubuntu-latest
+
+      steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm i
+        
+      - name: Build code
+        run: npm run build
+
+      - name: Run tests and coverage
+        run: npm run coverage
