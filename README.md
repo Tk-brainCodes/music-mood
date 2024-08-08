@@ -75,5 +75,4 @@ export const analyzeMood = async (text: string): Promise<string> => {
 
 ## 📹 Demo
 
-  <img src="./assets//music-mood-gif.gif" alt="gif-demo">
-
+[![Music Mood  Demo](./assets//demo-pic.png)](https://www.youtube.com/watch?v=UvbrRrhKn-k)
