@@ -7,19 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
-   "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write",
-      "eslint --fix"
-    ]
-  },
+   "lint-staged": {
+	"*.{js, jsx,ts,tsx}": [
+		"eslint --fix"
+		]
+	},
   "dependencies": {
     "@clerk/nextjs": "^5.2.8",
     "@langchain/core": "^0.2.18",

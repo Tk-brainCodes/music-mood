@@ -1,0 +1,21 @@
+name: Run linter on push
+
+on:
+  push:
+    branches:
+      - master
+
+
+jobs:
+  run-linter:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm i
+
+      - name: Lint code
+        run: npm run lint
