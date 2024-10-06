@@ -13,10 +13,10 @@ const PlayList = () => {
   const [mood, setMood] = useState<string>("");
   const [playlist, setPlaylist] = useState<Playlist | null>(null);
   const [loading, setLoading] = useState(false);
-  const [value, setValue] = React.useState("");
+  const [value, setValue] = useState("");
 
   const handleAnalyzeMood = async () => {
-    const prompt = `Analyze the mood of the following text and respond with a single word: ${text}`;
+    const prompt = `Analyze the mood, and artist mentioned of the following text and respond with a single word: ${text}`;
     setLoading(true);
     const analyzedMood = await getDynamicMusicMood(prompt);
     if (analyzedMood) {
